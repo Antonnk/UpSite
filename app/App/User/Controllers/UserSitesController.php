@@ -4,6 +4,7 @@
 namespace App\User\Controllers;
 
 
+use App\User\Requests\StoreUserSiteRequest;
 use App\User\ViewModels\UserSiteTableViewModel;
 use App\User\ViewModels\UserSiteViewModel;
 use Domain\Content\Actions\CreateContentAction;
@@ -35,7 +36,7 @@ class UserSitesController extends Controller
         return view('user.sites.create', new UserSiteViewModel);
     }
 
-    public function store(Request $request, CreateSiteAction $createSiteAction, CreateContentAction $createContentAction)
+    public function store(StoreUserSiteRequest $request, CreateSiteAction $createSiteAction, CreateContentAction $createContentAction)
     {
         $site = $createSiteAction->execute(new SiteData([
             'name' => $request->input('name'),
@@ -54,7 +55,7 @@ class UserSitesController extends Controller
         return view('user.sites.edit', new UserSiteViewModel($site));
     }
 
-    public function update(Site $site, Request $request, UpdateSiteAction $updateSiteAction)
+    public function update(Site $site, StoreUserSiteRequest $request, UpdateSiteAction $updateSiteAction)
     {
         $updateSiteAction->execute($site, new SiteData([
             'name' => $request->input('name'),
