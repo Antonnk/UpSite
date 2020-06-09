@@ -4,7 +4,13 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="532b1ddd-3626-41eb-9a26-62fe7b7344c5" name="Default Changelist" comment="" />
+    <list default="true" id="532b1ddd-3626-41eb-9a26-62fe7b7344c5" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/App/User/Controllers/UserSitesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/App/User/Controllers/UserSitesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/sites/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/sites/form.blade.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,9 +18,7 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -59,6 +63,12 @@
       </path>
     </expand>
     <select />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="PackageJsonUpdateNotifier">
+    <dismissed value="$PROJECT_DIR$/package.json" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -168,11 +178,13 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="sqlite" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.folding" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -188,18 +200,6 @@
       <TestRunner scope="XML" />
       <method v="2" />
     </configuration>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -231,11 +231,17 @@
       <workItem from="1591200131371" duration="6752000" />
       <workItem from="1591385111554" duration="4562000" />
       <workItem from="1591463566553" duration="2000" />
+      <workItem from="1591735673913" duration="62000" />
+      <workItem from="1591735750785" duration="243000" />
+      <workItem from="1591736013811" duration="2411000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.env" />
   </component>
   <component name="WindowStateProjectService">
     <state x="381" y="529" key="#Code_Folding" timestamp="1589674313893">
@@ -246,9 +252,14 @@
       <screen x="0" y="23" width="3200" height="1704" />
     </state>
     <state x="384" y="521" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.3200.1704@0.23.3200.1704" timestamp="1591389409644" />
-    <state x="368" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591129154295">
-      <screen x="0" y="23" width="3200" height="1704" />
+    <state x="1031" y="493" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591736256499">
+      <screen x="0" y="23" width="2560" height="1339" />
     </state>
+    <state x="1031" y="493" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1339@0.23.2560.1339" timestamp="1591736256499" />
+    <state x="294" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591736983641">
+      <screen x="0" y="23" width="2560" height="1339" />
+    </state>
+    <state x="294" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.2560.1339@0.23.2560.1339" timestamp="1591736983641" />
     <state x="368" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.3200.1704@0.23.3200.1704" timestamp="1591129154295" />
     <state x="569" y="787" key="#com.jetbrains.php.lang.intentions.PhpImportClassDialog#" timestamp="1591130773514">
       <screen x="0" y="23" width="3200" height="1704" />
@@ -266,17 +277,19 @@
       <screen x="0" y="23" width="3200" height="1704" />
     </state>
     <state x="539" y="718" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.23.3200.1704@0.23.3200.1704" timestamp="1589669852385" />
-    <state x="623" y="574" key="NewPhpClassDialog" timestamp="1591389084966">
-      <screen x="0" y="23" width="3200" height="1704" />
+    <state x="864" y="245" key="NewPhpClassDialog" timestamp="1591737829696">
+      <screen x="0" y="23" width="2560" height="1339" />
     </state>
+    <state x="864" y="245" key="NewPhpClassDialog/0.23.2560.1339@0.23.2560.1339" timestamp="1591737829696" />
     <state x="623" y="574" key="NewPhpClassDialog/0.23.3200.1704@0.23.3200.1704" timestamp="1591389084966" />
     <state x="601" y="787" key="NewPhpFileDialog" timestamp="1591208450586">
       <screen x="0" y="23" width="3200" height="1704" />
     </state>
     <state x="601" y="787" key="NewPhpFileDialog/0.23.3200.1704@0.23.3200.1704" timestamp="1591208450586" />
-    <state x="574" y="464" key="SettingsEditor" timestamp="1591386277755">
-      <screen x="0" y="23" width="3200" height="1704" />
+    <state x="775" y="199" key="SettingsEditor" timestamp="1591736972936">
+      <screen x="0" y="23" width="2560" height="1339" />
     </state>
+    <state x="775" y="199" key="SettingsEditor/0.23.2560.1339@0.23.2560.1339" timestamp="1591736972936" />
     <state x="574" y="464" key="SettingsEditor/0.23.3200.1704@0.23.3200.1704" timestamp="1591386277755" />
     <state x="511" y="590" width="540" height="524" key="StructurePopup" timestamp="1591130532867">
       <screen x="0" y="23" width="3200" height="1704" />
@@ -290,9 +303,10 @@
       <screen x="0" y="23" width="3200" height="1704" />
     </state>
     <state x="437" y="497" width="689" height="708" key="find.popup/0.23.3200.1704@0.23.3200.1704" timestamp="1591208609561" />
-    <state x="446" y="410" width="670" height="676" key="search.everywhere.popup" timestamp="1591390362511">
-      <screen x="0" y="23" width="3200" height="1704" />
+    <state x="987" y="506" width="670" height="532" key="search.everywhere.popup" timestamp="1591738540293">
+      <screen x="0" y="23" width="2560" height="1339" />
     </state>
+    <state x="987" y="506" width="670" height="532" key="search.everywhere.popup/0.23.2560.1339@0.23.2560.1339" timestamp="1591738540293" />
     <state x="446" y="410" width="670" height="676" key="search.everywhere.popup/0.23.3200.1704@0.23.3200.1704" timestamp="1591390362511" />
   </component>
 </project>
