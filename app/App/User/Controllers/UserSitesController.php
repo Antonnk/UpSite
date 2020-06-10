@@ -71,7 +71,7 @@ class UserSitesController extends Controller
 
     public function destroy(Site $site, Request $request, DeleteSiteAction $deleteSiteAction)
     {
-        $this->validate($request, [
+        $request->validate([
             'confirm' => ['required', Rule::in([$site->slug])]
         ]);
 
