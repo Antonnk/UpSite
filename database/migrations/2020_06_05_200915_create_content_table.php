@@ -14,11 +14,11 @@ class CreateContentsTable extends Migration
      */
     public function up()
     {
-        Schema::create('contents', function (Blueprint $table) {
+        Schema::create('content', function (Blueprint $table) {
             $table->id();
             $table->enum('type', [ContentTypeEnum::TEXT(), ContentTypeEnum::REPEATER()]);
-            $table->json('payload');
-            $table->foreignId('site_id')->unsigned();
+            $table->json('body');
+            $table->id('');
             $table->timestamps();
         });
     }
@@ -30,6 +30,6 @@ class CreateContentsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('contents');
+        Schema::dropIfExists('content');
     }
 }
