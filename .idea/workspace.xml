@@ -5,10 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="532b1ddd-3626-41eb-9a26-62fe7b7344c5" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TODO.md" beforeDir="false" afterPath="$PROJECT_DIR$/TODO.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/App/User/Controllers/UserSitesController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/App/User/Controllers/UserSitesController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Domain/Site/Models/Site.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Domain/Site/Models/Site.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Support/View/Components/InputViewComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Support/View/Components/InputViewComponent.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/form.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/input.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/user/sites/delete.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/sites/delete.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/user/sites/form.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/user/sites/form.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,50 +23,6 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
-  </component>
-  <component name="DatabaseView">
-    <option name="SHOW_INTERMEDIATE" value="true" />
-    <option name="GROUP_DATA_SOURCES" value="true" />
-    <option name="GROUP_SCHEMA" value="true" />
-    <option name="GROUP_CONTENTS" value="false" />
-    <option name="SORT_POSITIONED" value="false" />
-    <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
-    <option name="HIDDEN_KINDS">
-      <set />
-    </option>
-    <expand>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="database.sqlite" type="feb32156:DbDataSourceImpl" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="database.sqlite" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="database.sqlite" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="database.sqlite" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="contents: table" type="3d80ac25:SqliteImplModel$Table" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="database.sqlite" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-        <item name="sites: table" type="3d80ac25:SqliteImplModel$Table" />
-      </path>
-    </expand>
-    <select />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -233,7 +193,9 @@
       <workItem from="1591463566553" duration="2000" />
       <workItem from="1591735673913" duration="62000" />
       <workItem from="1591735750785" duration="243000" />
-      <workItem from="1591736013811" duration="2411000" />
+      <workItem from="1591736013811" duration="2515000" />
+      <workItem from="1591813376502" duration="53000" />
+      <workItem from="1591814778350" duration="1528000" />
     </task>
     <servers />
   </component>
@@ -248,14 +210,19 @@
       <screen x="0" y="23" width="3200" height="1704" />
     </state>
     <state x="381" y="529" key="#Code_Folding/0.23.3200.1704@0.23.3200.1704" timestamp="1589674313893" />
-    <state x="384" y="521" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591389409644">
-      <screen x="0" y="23" width="3200" height="1704" />
+    <state x="307" y="414" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1591814859834">
+      <screen x="0" y="23" width="2560" height="1339" />
     </state>
+    <state x="307" y="414" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.2560.1339@0.23.2560.1339" timestamp="1591814859834" />
     <state x="384" y="521" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.3200.1704@0.23.3200.1704" timestamp="1591389409644" />
     <state x="1031" y="493" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591736256499">
       <screen x="0" y="23" width="2560" height="1339" />
     </state>
     <state x="1031" y="493" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2560.1339@0.23.2560.1339" timestamp="1591736256499" />
+    <state x="1108" y="407" key="#com.intellij.ide.util.MemberChooser" timestamp="1591815150193">
+      <screen x="0" y="23" width="2560" height="1339" />
+    </state>
+    <state x="1108" y="407" key="#com.intellij.ide.util.MemberChooser/0.23.2560.1339@0.23.2560.1339" timestamp="1591815150193" />
     <state x="294" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1591736983641">
       <screen x="0" y="23" width="2560" height="1339" />
     </state>
@@ -291,9 +258,10 @@
     </state>
     <state x="775" y="199" key="SettingsEditor/0.23.2560.1339@0.23.2560.1339" timestamp="1591736972936" />
     <state x="574" y="464" key="SettingsEditor/0.23.3200.1704@0.23.3200.1704" timestamp="1591386277755" />
-    <state x="511" y="590" width="540" height="524" key="StructurePopup" timestamp="1591130532867">
-      <screen x="0" y="23" width="3200" height="1704" />
+    <state x="409" y="469" width="516" height="412" key="StructurePopup" timestamp="1591814928842">
+      <screen x="0" y="23" width="2560" height="1339" />
     </state>
+    <state x="409" y="469" width="516" height="412" key="StructurePopup/0.23.2560.1339@0.23.2560.1339" timestamp="1591814928842" />
     <state x="511" y="590" width="540" height="524" key="StructurePopup/0.23.3200.1704@0.23.3200.1704" timestamp="1591130532867" />
     <state width="588" height="445" key="SwitcherDM" timestamp="1591389680185">
       <screen x="0" y="23" width="3200" height="1704" />
@@ -303,10 +271,10 @@
       <screen x="0" y="23" width="3200" height="1704" />
     </state>
     <state x="437" y="497" width="689" height="708" key="find.popup/0.23.3200.1704@0.23.3200.1704" timestamp="1591208609561" />
-    <state x="987" y="506" width="670" height="532" key="search.everywhere.popup" timestamp="1591738540293">
+    <state x="987" y="506" width="670" height="532" key="search.everywhere.popup" timestamp="1591816213522">
       <screen x="0" y="23" width="2560" height="1339" />
     </state>
-    <state x="987" y="506" width="670" height="532" key="search.everywhere.popup/0.23.2560.1339@0.23.2560.1339" timestamp="1591738540293" />
+    <state x="987" y="506" width="670" height="532" key="search.everywhere.popup/0.23.2560.1339@0.23.2560.1339" timestamp="1591816213522" />
     <state x="446" y="410" width="670" height="676" key="search.everywhere.popup/0.23.3200.1704@0.23.3200.1704" timestamp="1591390362511" />
   </component>
 </project>
