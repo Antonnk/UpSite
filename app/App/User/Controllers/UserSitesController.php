@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App\User\Controllers;
-
 
 use App\User\Requests\StoreUserSiteRequest;
 use App\User\ViewModels\UserSiteTableViewModel;
@@ -15,15 +13,14 @@ use Domain\Site\Actions\UpdateSiteAction;
 use Domain\Site\DTOs\SiteData;
 use Domain\Site\Models\Site;
 use Illuminate\Http\Request;
+use Illuminate\Validation\Rule;
 use Support\Controller;
 
 class UserSitesController extends Controller
 {
     public function index()
     {
-        $sites = Site::where('user_id', auth()->id())->get();
-
-        return view('user.sites.index', new UserSiteTableViewModel($sites));
+        return view('user.sites.index', new UserSiteTableViewModel(Site::where('user_id', auth()->id())->get()));
     }
 
     public function show(Site $site)
