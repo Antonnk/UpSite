@@ -18,7 +18,10 @@
 
     <x-section class="p-4">
         @foreach($site->content as $content)
-            {{ $content->type }}: {{ $content->body }}
+            {{ $content->type }}: {{ $content->body }}<br>
         @endforeach
+
+        @include('user.content.form', ['contentable' => $site])
+
     </x-section>
 @endsection
