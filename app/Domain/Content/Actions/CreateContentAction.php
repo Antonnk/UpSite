@@ -6,16 +6,17 @@ namespace Domain\Content\Actions;
 
 use Domain\Content\Enums\ContentTypeEnum;
 use Domain\Content\Models\Content;
-use Domain\Site\Models\Site;
+use Illuminate\Database\Eloquent\Model;
 
 class CreateContentAction
 {
-    public function execute(ContentTypeEnum $type, array $payload, Site $site): Content
+    public function execute(ContentTypeEnum $type, array $payload, Model $model): Content
     {
         return Content::create([
             'type' => $type,
-            'payload' => json_encode($payload),
-            'site_id' => $site->id
+            'body' => json_encode($payload),
+            'contentable_id' => $model->getKey(),
+            'contentable_type' => get_class($model)
         ]);
     }
 }

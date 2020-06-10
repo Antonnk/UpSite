@@ -5,6 +5,7 @@ namespace Domain\Site\Models;
 
 
 use Domain\Content\Models\Content;
+use Domain\Content\Traits\Contentable;
 use Illuminate\Database\Eloquent\Model;
 
 /**
@@ -15,15 +16,12 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Site extends Model
 {
+    use Contentable;
+
     protected $guarded = [];
 
     public function getRouteKeyName()
     {
         return 'slug';
-    }
-
-    public function content()
-    {
-        return $this->hasMany(Content::class);
     }
 }

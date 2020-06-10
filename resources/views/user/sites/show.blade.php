@@ -18,7 +18,7 @@
 
     <x-section class="p-4">
         @foreach($site->content as $content)
-            {{ $content->type }}: {{ $content->payload }}
+            {{ $content->type }}: {{ $content->body }}
         @endforeach
     </x-section>
 @endsection
