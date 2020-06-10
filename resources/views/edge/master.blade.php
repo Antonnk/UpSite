@@ -7,6 +7,6 @@
         <title>{{ $site->name }}</title>
     </head>
     <body>
-        <h1>{{ $site->name }}</h1>
+        @yield('body')
     </body>
 </html>
