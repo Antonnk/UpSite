@@ -69,8 +69,12 @@ class UserSitesController extends Controller
         return view('user.sites.delete', compact('site'));
     }
 
-    public function destroy(Site $site, DeleteSiteAction $deleteSiteAction)
+    public function destroy(Site $site, Request $request, DeleteSiteAction $deleteSiteAction)
     {
+        $this->validate($request, [
+            'confirm' => ['required', Rule::in([$site->slug])]
+        ]);
+
         $deleteSiteAction->execute($site);
 
         return redirect()->action([self::class, 'index']);
