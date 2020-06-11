@@ -6,7 +6,6 @@ use App\User\Requests\StoreUserSiteRequest;
 use App\User\ViewModels\UserSiteTableViewModel;
 use App\User\ViewModels\UserSiteViewModel;
 use Domain\Content\Actions\CreateContentAction;
-use Domain\Content\Enums\ContentTypeEnum;
 use Domain\Site\Actions\CreateSiteAction;
 use Domain\Site\Actions\DeleteSiteAction;
 use Domain\Site\Actions\UpdateSiteAction;
@@ -41,8 +40,6 @@ class UserSitesController extends Controller
             'theme' => $request->input('theme'),
             'user_id' => $request->user()->id
         ]));
-
-        $createContentAction->execute(ContentTypeEnum::TEXT(), ['body' => 'Hello'], $site);
 
         return redirect()->action([self::class, 'show'], compact('site'));
     }

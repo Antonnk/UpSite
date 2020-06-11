@@ -21,7 +21,7 @@
             {{ $content->type }}: {{ $content->body }}<br>
         @endforeach
 
-        @include('user.content.form', ['contentable' => $site])
+        @include('user.content.form', ['site' => $site])
 
     </x-section>
 @endsection

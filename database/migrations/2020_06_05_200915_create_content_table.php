@@ -1,11 +1,11 @@
 <?php
 
-use Domain\Content\Enums\ContentTypeEnum;
+use Domain\Content\Contracts\ContentDefinitionContract;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateContentsTable extends Migration
+class CreateContentTable extends Migration
 {
     /**
      * Run the migrations.
@@ -16,9 +16,10 @@ class CreateContentsTable extends Migration
     {
         Schema::create('content', function (Blueprint $table) {
             $table->id();
-            $table->enum('type', [ContentTypeEnum::TEXT(), ContentTypeEnum::REPEATER()]);
+            $table->enum('type', ContentDefinitionContract::DEFINITIONS);
             $table->json('body');
-            $table->id('');
+            $table->bigInteger('contentable_id');
+            $table->string('contentable_type');
             $table->timestamps();
         });
     }
