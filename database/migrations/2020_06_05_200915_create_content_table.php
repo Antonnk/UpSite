@@ -17,6 +17,7 @@ class CreateContentTable extends Migration
         Schema::create('content', function (Blueprint $table) {
             $table->id();
             $table->enum('type', ContentDefinitionContract::DEFINITIONS);
+            $table->json('meta');
             $table->json('body');
             $table->bigInteger('contentable_id');
             $table->string('contentable_type');

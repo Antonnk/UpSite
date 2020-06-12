@@ -13,6 +13,7 @@ class SiteContentController extends Controller
     {
         $createContentAction->execute(
             app($request->input('type')),
+            $request->input('meta'),
             [$request->input('body')],
             $site
         );

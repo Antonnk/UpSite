@@ -2,6 +2,7 @@
 
 
 use App\Edge\Controllers\SiteController;
+use App\User\Controllers\ContentController;
 use App\User\Controllers\SiteContentController;
 use App\User\Controllers\ProfileController;
 use App\User\Controllers\LoginController;
@@ -38,4 +39,5 @@ Route::middleware('auth')->prefix('profile')->group(function () {
     Route::delete('sites/{site}/delete', [UserSitesController::class, 'destroy']);
 
     Route::post('site/{site}/content', [SiteContentController::class, 'store']);
+    Route::post('content/{content}/edit', [ContentController::class, 'update']);
 });

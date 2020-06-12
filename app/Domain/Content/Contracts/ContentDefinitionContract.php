@@ -3,6 +3,7 @@
 namespace Domain\Content\Contracts;
 
 use Domain\Content\Models\Content;
+use Illuminate\View\View;
 use Domain\Content\Definitions\{TextContentDefinition, RepeaterContentDefinition};
 
 interface ContentDefinitionContract
@@ -13,4 +14,6 @@ interface ContentDefinitionContract
     ];
 
     public static function render(Content $content): string;
+
+    //public static function form(): View;
 }

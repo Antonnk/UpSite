@@ -8,11 +8,12 @@ use Domain\Content\Models\Content;
 
 class CreateContentAction
 {
-    public function execute(ContentDefinitionContract $definition, array $payload, ContentableContract $contentable): Content
+    public function execute(ContentDefinitionContract $definition, array $meta, array $body, ContentableContract $contentable): Content
     {
         return Content::create([
             'type' => get_class($definition),
-            'body' => $payload,
+            'meta' => $meta,
+            'body' => $body,
             'contentable_id' => $contentable->getContentableId(),
             'contentable_type' => $contentable->getContentableType()
         ]);

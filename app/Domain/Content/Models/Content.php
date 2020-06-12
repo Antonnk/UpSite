@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * @property string $type
+ * @property array $meta
  * @property array $body
  */
 class Content extends Model
@@ -18,6 +19,7 @@ class Content extends Model
     protected $table = "content";
 
     protected $casts = [
+        'meta' => 'array',
         'body' => 'array'
     ];
 

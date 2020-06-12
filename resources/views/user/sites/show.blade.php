@@ -18,7 +18,7 @@
 
     <x-section class="p-4">
         @foreach($site->content as $content)
-            {{ $content->type::render($content) }}<br>
+            {{ $content->type::form($content) }}<br>
         @endforeach
 
         @include('user.content.form', ['site' => $site])

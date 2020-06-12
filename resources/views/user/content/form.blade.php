@@ -8,6 +8,8 @@
             @endforeach
         </select>
 
+        <x-input name="meta[name]" label="Content Name"></x-input>
+
         <textarea name="body"></textarea>
 
         <div class="flex">
