@@ -12,7 +12,7 @@ class CreateContentAction
     {
         return Content::create([
             'type' => get_class($definition),
-            'body' => json_encode($payload),
+            'body' => $payload,
             'contentable_id' => $contentable->getContentableId(),
             'contentable_type' => $contentable->getContentableType()
         ]);
