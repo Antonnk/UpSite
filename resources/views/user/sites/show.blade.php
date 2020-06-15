@@ -19,7 +19,7 @@
     <x-section class="p-4">
         <x-form action="{{ action([\App\User\Controllers\UpdateContentPayloadController::class], $site) }}">
             @foreach($site->themeDefinition->sections as $section)
-                <x-section class="p-4 mb-10 shadow-none">
+                <x-section class="p-4 mb-6 shadow-none">
                     <h2 class="text-lg font-medium">{{ $section->title }}</h2>
                     <p class="text-gray-600 mb-6">{{ $section->description }}</p>
                     @foreach($section->fields as $field)
