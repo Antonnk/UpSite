@@ -26,6 +26,6 @@ class Section
 
     public static function create(string $name, string $title, string $description, array $fields)
     {
-        return new self($name, $title, $description, $fields);
+        return new self(...func_get_args());
     }
 }

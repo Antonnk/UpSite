@@ -9,14 +9,20 @@ use Illuminate\View\View;
 
 class InputViewComponent extends Component
 {
+    /** @var string */
     public $label;
 
+    /** @var string */
     public $name;
 
-    public function __construct(string $name, string $label)
+    /** @var string|null */
+    public $description;
+
+    public function __construct(string $name, string $label, ?string $description = null)
     {
         $this->label = $label;
         $this->name = $name;
+        $this->description = $description;
     }
 
     public function render(): View

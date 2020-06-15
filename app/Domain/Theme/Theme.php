@@ -22,6 +22,6 @@ class Theme
 
     public static function create(string $name, string $title, array $sections)
     {
-        return new self($name, $title, $sections);
+        return new self(...func_get_args());
     }
 }

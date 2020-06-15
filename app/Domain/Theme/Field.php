@@ -15,15 +15,19 @@ class Field
     /** @var string */
     public $title;
 
-    public function __construct(string $name, string $type, string $title)
+    /** @var string|null */
+    public $description;
+
+    public function __construct(string $name, string $type, string $title, ?string $description = null)
     {
         $this->name = $name;
         $this->type = $type;
         $this->title = $title;
+        $this->description = $description;
     }
 
-    public static function create(string $name, string $type, string $title)
+    public static function create(string $name, string $type, string $title, ?string $description = null)
     {
-        return new self($name, $type, $title);
+        return new self(...func_get_args());
     }
 }
