@@ -1,19 +1,19 @@
 <?php
 
-
 namespace Domain\Content\Actions;
-
 
 use Domain\Content\Models\Content;
 use Domain\Site\Models\Site;
 
-class CreateContentAction
+class UpdateContentAction
 {
-    public function execute(array $payload, Site $site): Content
+    public function execute(Content $content, array $payload, Site $site): Content
     {
-        return Content::create([
+        $content->update([
             'payload' => $payload,
             'site_id' => $site->id
         ]);
+
+        return $content;
     }
 }
